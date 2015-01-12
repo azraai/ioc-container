@@ -1,5 +1,6 @@
-<?php namespace Acme;
+<?php namespace Acme\Car;
 
+use Acme\Contracts\Car;
 use Acme\Contracts\Fuel;
 
 class Axia implements Car
