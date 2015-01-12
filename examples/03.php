@@ -13,11 +13,12 @@ $app->afterResolving('Acme\Contracts\Fuel', function ($fuel) {
 });
 
 $ron95 = $app->make('Acme\Fuel\Ron95');
-$axia95 = $app->make('Acme\Car\Axia', [$ron95]);
-
-echo $axia95->refuel(50) . PHP_EOL;
-
 $ron97 = $app->make('Acme\Fuel\Ron97');
-$axia97 = $app->make('Acme\Car\Axia', [$ron97]);
 
-echo $axia97->refuel(50) . PHP_EOL;
+$axia = $app->make('Acme\Car\Axia', [$ron95]);
+
+echo $axia->refuel(50) . PHP_EOL;
+
+$civic = $app->make('Acme\Car\CivicTypeR', [$ron97]);
+
+echo $civic->refuel(50) . PHP_EOL;
