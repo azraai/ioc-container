@@ -1,4 +1,4 @@
-<?php namespace Acme;
+<?php namespace Acme\Fuel;
 
 use Acme\Contracts\Fuel;
 
@@ -11,6 +11,6 @@ class Ron95 implements Fuel
      */
     public function getPrice()
     {
-        return 2.11;
+        return 1.911;
     }
 }
