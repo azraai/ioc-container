@@ -1,15 +1,13 @@
-<?php namespace Acme\Fuel;
+<?php 
 
-use Acme\Contracts\Fuel;
-
-class Ron97 implements Fuel
+class Ron95 implements FuelInterface
 {
     /**
      * Price value.
      *
      * @var double
      */
-    protected $value = 2.11;
+    protected $value = 1.91;
 
     /**
      * Get fuel price.

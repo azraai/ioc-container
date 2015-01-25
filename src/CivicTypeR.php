@@ -1,21 +1,18 @@
-<?php namespace Acme\Car;
+<?php
 
-use Acme\Contracts\Car;
-use Acme\Fuel\Ron97;
-
-class CivicTypeR implements Car
+class CivicTypeR implements CarInterface
 {
     /**
      * The implementation of fuel.
      *
-     * @var \Acme\Fuel\Ron97
+     * @var Ron97
      */
     protected $fuel;
 
     /**
      * Construct a new Car implementation.
      *
-     * @param \Acme\Fuel\Ron97 $fuel
+     * @param Ron97 $fuel
      */
     public function __construct(Ron97 $fuel)
     {
@@ -32,5 +29,4 @@ class CivicTypeR implements Car
     {
         return $litres * $this->fuel->getPrice();
     }
-
 }

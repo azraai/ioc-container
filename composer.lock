@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "aaf655b5550a11354242539a2fdf258d",
+    "hash": "a0162b772687b8a6944ab24568957ea9",
     "packages": [
         {
             "name": "illuminate/container",
@@ -54,12 +54,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "d74a93ef629d29bbf10d66de9ea9feb56df7cd87"
+                "reference": "e109a90983745e14064799ef102f9c0a78f8d586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/d74a93ef629d29bbf10d66de9ea9feb56df7cd87",
-                "reference": "d74a93ef629d29bbf10d66de9ea9feb56df7cd87",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/e109a90983745e14064799ef102f9c0a78f8d586",
+                "reference": "e109a90983745e14064799ef102f9c0a78f8d586",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 }
             ],
             "description": "The Illuminate Contracts package.",
-            "time": "2015-01-07 01:43:59"
+            "time": "2015-01-22 21:27:46"
         }
     ],
     "packages-dev": [],
@@ -96,6 +96,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.5.0"
+    },
     "platform-dev": []
 }

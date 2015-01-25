@@ -1,6 +1,6 @@
-<?php namespace Acme\Contracts;
+<?php
 
-interface Car
+interface CarInterface
 {
     /**
      * Refuel the car.

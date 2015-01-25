@@ -4,14 +4,14 @@ require_once "vendor/autoload.php";
 
 $app = new \Illuminate\Container\Container();
 
-$app->when(Acme\Car\Axia::class)
-    ->needs(Acme\Contracts\Fuel::class)
-    ->give(Acme\Fuel\Ron95::class);
+$app->when('Axia')
+    ->needs('FuelInterface')
+    ->give('Ron97');
 
-$axia = $app->make(Acme\Car\Axia::class);
+$axia = $app->make('Axia');
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
-$civic = $app->make(Acme\Car\CivicTypeR::class);
+$civic = $app->make('CivicTypeR');
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;

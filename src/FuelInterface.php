@@ -1,6 +1,6 @@
-<?php namespace Acme\Contracts;
+<?php
 
-interface Fuel
+interface FuelInterface
 {
     /**
      * Get fuel price.

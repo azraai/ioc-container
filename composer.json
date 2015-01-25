@@ -1,16 +1,8 @@
 {
-    "name": "threening/ioc-container",
-    "description": "IoC Container Introduction",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "crynobone",
-            "email": "crynobone@gmail.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
-            "Acme\\": "src/"
+            "": "src/"
         }
     },
     "require": {

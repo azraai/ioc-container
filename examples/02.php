@@ -4,13 +4,12 @@ require_once "vendor/autoload.php";
 
 $app = new Illuminate\Container\Container();
 
-$app->bind(Acme\Contracts\Fuel::class, Acme\Fuel\Ron95::class);
+$app->bind('FuelInterface', 'Ron95');
 
-$axia = $app->make(Acme\Car\Axia::class);
+$axia = $app->make('Axia');
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
-$ron97 = $app->make(Acme\Fuel\Ron97::class);
-$civic = $app->make(Acme\Car\CivicTypeR::class, [$ron97]);
+$civic = $app->make('CivicTypeR');
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;

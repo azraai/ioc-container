@@ -2,10 +2,10 @@
 
 require_once "vendor/autoload.php";
 
-$axia = new Acme\Car\Axia(new Acme\Fuel\Ron95());
+$axia = new Axia(new Ron95());
 
-echo $axia->refuel(50) . PHP_EOL;
+echo $axia->refuel(100) . PHP_EOL;
 
-$civic = new Acme\Car\CivicTypeR(new Acme\Fuel\Ron97());
+$civic = new CivicTypeR(new Ron97());
 
-echo $civic->refuel(50) . PHP_EOL;
+echo $civic->refuel(100) . PHP_EOL;

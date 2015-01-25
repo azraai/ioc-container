@@ -1,23 +1,20 @@
-<?php namespace Acme\Car;
+<?php
 
-use Acme\Contracts\Car;
-use Acme\Contracts\Fuel;
-
-class Axia implements Car
+class Axia implements CarInterface
 {
     /**
      * The implementation of fuel.
      *
-     * @var \Acme\Contracts\Fuel
+     * @var FuelInterface
      */
     protected $fuel;
 
     /**
      * Construct a new Car implementation.
      *
-     * @param \Acme\Contracts\Fuel $fuel
+     * @param FuelInterface $fuel
      */
-    public function __construct(Fuel $fuel)
+    public function __construct(FuelInterface $fuel)
     {
         $this->fuel = $fuel;
     }
