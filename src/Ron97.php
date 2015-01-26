@@ -10,13 +10,20 @@ class Ron97 implements FuelInterface
     protected $value = 2.11;
 
     /**
+     * Price value.
+     *
+     * @var double|null
+     */
+    protected $price = null;
+
+    /**
      * Get fuel price.
      *
      * @return double
      */
     public function getPrice()
     {
-        return $this->value;
+        return $this->price ?: $this->value;
     }
 
     /**

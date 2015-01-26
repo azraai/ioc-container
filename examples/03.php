@@ -9,7 +9,7 @@ $app->bind('FuelInterface', 'Ron95');
 // Imagine if out of sudden, you need to calculate GST
 // for all the fuels.
 $app->afterResolving('FuelInterface', function ($fuel) {
-    $fuel->setPrice($fuel->getPrice() * 1.06);
+    return $fuel->setPrice($fuel->getPrice() * 1.06);
 });
 
 $axia = $app->make('Axia');
